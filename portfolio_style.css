@@ -1,0 +1,115 @@
+
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 5px;
+  font-family: "Lato", sans-serif;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://pbs.twimg.com/media/FMIm-IuXEAMAi9S?format=jpg&name=small");
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.socials {
+  font-size: 3em;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#my-name {
+  font-size: 50px;
+  font-family: "Calligraffitti", cursive;
+  font-weight: 300%;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #fad2e1;
+  color: black;
+}
+
+
+.container {
+  width: 100%;
+  box-align: center;
+  background-color: #FFC8DD;
+  border-radius: 6px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+#contactForm {
+  padding: 25px;
+}
+
+#firstName,
+#surname,
+#email,
+textarea {
+  width: 90%;
+  padding: 10px 16px 10px 16px;
+  margin: 8px 0 8px 0;
+  border-radius: 10px;
+  border: 0;
+}
+
+#firstName:hover,
+#surname:hover,
+#email:hover,
+textarea:hover {
+  background-color: #fad2e1;
+  font-size: 22px;
+}
+
+#submitButton {
+  width: 100%;
+  border-radius: 8px;
+  border: 0;
+  background-color: #FFAFCC;
+  padding: 14px 20px 14px 20px;
+  text-align: center;
+  cursor: pointer;
+  color:white;
+  font-size: 20px;
+}
+
+
+@media screen and (min-width: 40em) {
+  
+}
+
+@media screen and (min-width: 60em) {
+}
