@@ -16,7 +16,7 @@ html {
 .hero-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("https://pbs.twimg.com/media/FMIm-IuXEAMAi9S?format=jpg&name=small");
-  height: 80%;
+    height: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,9 +61,58 @@ html {
   color: black;
 }
 
+.card-container {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card {
+  margin: 20px;
+  width: 300px;
+  box-shadow: 0 5px 15px rgba(82, 82, 82, 0.5);
+  border-radius: 20px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
+
+img {
+  width: 100%;
+  height: 250px;
+  border-radius: 20px 20px 0 0;
+}
+
+.card-text {
+  height: 240px;
+  padding: 0 15px 15px 15px;
+}
+
+.category {
+  color: blue;
+  font-size: 12px;
+  margin-top: 14px;
+}
+
+h2 {
+  font-size: 30px;
+  text-transform: capitalize;
+  margin-top: 7px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+p {
+  color: rgb(63, 63, 63);
+}
 
 .container {
-  width: 100%;
+  width: 80%;
+  margin:auto;
   box-align: center;
   background-color: #FFC8DD;
   border-radius: 6px;
@@ -108,8 +157,34 @@ textarea:hover {
 
 
 @media screen and (min-width: 40em) {
-  
+  .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card {
+  width: 45%;
+}
+
+#get-in-touch {
+  width: 30em;
+  margin: auto;
+}
 }
 
 @media screen and (min-width: 60em) {
+
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .card {
+    width: 30%;
+  }
+  #get-in-touch {
+    width: 30em;
+    margin: auto;
+  }
 }
